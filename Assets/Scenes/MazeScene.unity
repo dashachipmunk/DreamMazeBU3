@@ -85848,6 +85848,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scenes
       objectReference: {fileID: 0}
+    - target: {fileID: 1208869478825499306, guid: 542dbb2c50bcbd44c96f8f9b4b6907be,
+        type: 3}
+      propertyPath: healthController
+      value: 
+      objectReference: {fileID: 1585906695}
+    - target: {fileID: 1208869478825499306, guid: 542dbb2c50bcbd44c96f8f9b4b6907be,
+        type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1910600834}
     - target: {fileID: 1208869478825499307, guid: 542dbb2c50bcbd44c96f8f9b4b6907be,
         type: 3}
       propertyPath: m_LocalPosition.x

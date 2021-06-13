@@ -43,3 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5577e4e4f427b9c47b0e49ede2eb8655, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthController: {fileID: 6332651181325177472, guid: b5dc79375ba11a94eb5636d0acff6bd9,
+    type: 3}
+  gameManager: {fileID: 6088244111269468056, guid: f0704e1723c9a3c4497b44efbab11c40,
+    type: 3}

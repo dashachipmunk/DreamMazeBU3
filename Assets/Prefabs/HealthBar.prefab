@@ -4813,7 +4813,8 @@ MonoBehaviour:
   - {fileID: 6332651182454361248}
   - {fileID: 6332651183047180535}
   - {fileID: 6332651182437895634}
-  gameData: {fileID: 11400000, guid: 5c15e14812596b14d8e580164b4d58e9, type: 2}
+  initialHealth: 3
+  health: 3
 --- !u!1 &6332651181717554866
 GameObject:
   m_ObjectHideFlags: 0

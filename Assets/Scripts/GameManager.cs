@@ -7,14 +7,17 @@ public class GameManager : MonoBehaviour
     public int totalScore;
     [HideInInspector]
     public int score;
+    public int levelScore;
+
     [SerializeField]
     private TextMeshProUGUI scoreTextUI;
-
     private bool isPaused;
 
     private void Awake()
     {
         score = PlayerPrefs.GetInt("TotalScore");
+        PlayerPrefs.SetInt("LevelScore", score);
+        levelScore = PlayerPrefs.GetInt("LevelScore");
     }
 
     private void Update()

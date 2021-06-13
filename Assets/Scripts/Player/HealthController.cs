@@ -6,6 +6,7 @@ public class HealthController : MonoBehaviour
     [SerializeField]
     private GameObject[] healthParticle;
 
+    public int initialHealth;
     public int health;
 
     private void Start()

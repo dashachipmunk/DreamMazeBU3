@@ -67,7 +67,7 @@ public class EnemyController : MonoBehaviour
         distance = Vector3.Distance(transform.position, player.transform.position);
     }
 
-    private void Dead()
+    private void EnemyDies()
     {
         if (health <= 0)
         {
@@ -148,7 +148,7 @@ public class EnemyController : MonoBehaviour
             transform.localScale -= healthReduce;
             colliderEnemy.radius = 2;
             Destroy(other.gameObject);
-            Dead();
+            EnemyDies();
         }
     }
 

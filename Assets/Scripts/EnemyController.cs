@@ -10,7 +10,7 @@ public class EnemyController : MonoBehaviour
     [SerializeField]
     private GameObject player;
     private HealthController playerHealthController;
-    private Collider colliderEnemy;
+    private CapsuleCollider colliderEnemy;
     public float distance;
 
     [Header("Path finder")]
@@ -49,7 +49,7 @@ public class EnemyController : MonoBehaviour
     {
         aiPath = GetComponent<AIPath>();
         destinationSetter = GetComponent<AIDestinationSetter>();
-        colliderEnemy = GetComponent<Collider>();
+        colliderEnemy = GetComponent<CapsuleCollider>();
     }
 
     void Start()
@@ -146,7 +146,7 @@ public class EnemyController : MonoBehaviour
             health--;
             Vector3 healthReduce = new Vector3(scaleReduce, scaleReduce, scaleReduce);
             transform.localScale -= healthReduce;
-            colliderEnemy.transform.localScale += healthReduce;
+            colliderEnemy.radius = 2;
             Destroy(other.gameObject);
             Dead();
         }

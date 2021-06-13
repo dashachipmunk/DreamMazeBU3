@@ -33155,7 +33155,7 @@ PrefabInstance:
     - target: {fileID: 7963906248410388575, guid: d6750d7cf2441a94fa6b9050abefc88f,
         type: 3}
       propertyPath: m_Name
-      value: Life Variant (1)
+      value: Life Variant3
       objectReference: {fileID: 0}
     - target: {fileID: 7963906248410416253, guid: d6750d7cf2441a94fa6b9050abefc88f,
         type: 3}
@@ -80545,7 +80545,7 @@ PrefabInstance:
     - target: {fileID: 7963906248410388575, guid: d6750d7cf2441a94fa6b9050abefc88f,
         type: 3}
       propertyPath: m_Name
-      value: Life Variant
+      value: Life Variant2
       objectReference: {fileID: 0}
     - target: {fileID: 7963906248410416253, guid: d6750d7cf2441a94fa6b9050abefc88f,
         type: 3}

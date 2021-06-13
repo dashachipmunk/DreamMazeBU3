@@ -20299,6 +20299,11 @@ PrefabInstance:
       propertyPath: horizontalMoving
       value: 
       objectReference: {fileID: 1200579547}
+    - target: {fileID: -6346494212936847155, guid: dfd8f04c773758343aa2c15778e4f003,
+        type: 3}
+      propertyPath: startTransform
+      value: 
+      objectReference: {fileID: 789774389}
     - target: {fileID: 3509249579377990984, guid: dfd8f04c773758343aa2c15778e4f003,
         type: 3}
       propertyPath: m_LocalPosition.x

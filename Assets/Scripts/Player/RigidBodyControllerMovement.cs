@@ -35,13 +35,14 @@ public class RigidBodyControllerMovement : MonoBehaviour
     [SerializeField]
     private HorizontalMovingPlatformController horizontalMoving;
     [SerializeField]
-    private Transform startPosition;
+    private Transform startTransform;
     [SerializeField]
     private WorldRotationController[] worldRotation;
     [SerializeField]
     private Animator animator;
     [SerializeField]
     private ScenesController scenesController;
+    private Vector3 startPosition;
 
     [Header("Health")]
     private HealthController healthController;
@@ -66,7 +67,8 @@ public class RigidBodyControllerMovement : MonoBehaviour
 
     private void Start()
     {
-        //transform.localPosition = startPosition.localPosition;
+        transform.localPosition = startTransform.localPosition;
+        startPosition = new Vector3(0, 0, 0);
         touchedPlatformCounter = -1;
         touchedRotationPlatformCounter = -1;
         healthController = FindObjectOfType<HealthController>();
@@ -125,7 +127,9 @@ public class RigidBodyControllerMovement : MonoBehaviour
         if (!isHealthReduced)
         {
             healthController.HealthReduce();
-            transform.DOMove(startPosition.position, returnToStartSpeed);
+            transform.DOMove(startTransform.position, returnToStartSpeed);
+            //transform.DORotate(new Vector3(0, 0, 0), 2);
+            //world.transform.DORotate(new Vector3(0, 0, 0), 2);
             isHealthReduced = true;
             StartCoroutine(WaitPlayerIsReturnedToStart());
         }
@@ -182,7 +186,7 @@ public class RigidBodyControllerMovement : MonoBehaviour
         }
         else if (other.gameObject.CompareTag("Save"))
         {
-            startPosition.position = transform.position;
+            startTransform.position = transform.position;
         }
         else if (other.gameObject.CompareTag("Death"))
         {
@@ -211,8 +215,10 @@ public class RigidBodyControllerMovement : MonoBehaviour
 
     private IEnumerator WaitPlayerIsReturnedToStart()
     {
-        yield return new WaitUntil(() => transform.position == startPosition.position);
+        yield return new WaitUntil(() => transform.position == startTransform.position);
         isHealthReduced = false;
+        world.transform.DORotate(new Vector3(0, 0, 0), 0.1f);
+        transform.DORotate(new Vector3(0, 0, 0), 0.1f);
     }
 
     private IEnumerator WaitTeleportSound()

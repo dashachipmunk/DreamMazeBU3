@@ -9,8 +9,8 @@ public class TutorialController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            tutorial.gameObject.SetActive(true);
             UIController.singletonUI.ShowTutorialPanel();
+            tutorial.gameObject.SetActive(true);
         }
     }
 }

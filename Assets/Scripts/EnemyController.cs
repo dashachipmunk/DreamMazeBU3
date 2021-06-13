@@ -11,7 +11,6 @@ public class EnemyController : MonoBehaviour
     private GameObject player;
     private HealthController playerHealthController;
     private CapsuleCollider colliderEnemy;
-    public float distance;
 
     [Header("Path finder")]
     [SerializeField]
@@ -20,6 +19,7 @@ public class EnemyController : MonoBehaviour
     private AIDestinationSetter destinationSetter;
     private System.Random randomPatrolPoints;
     private Transform startPosition;
+    private float distance;
 
     [Header("Attack")]
     [SerializeField]
@@ -64,7 +64,6 @@ public class EnemyController : MonoBehaviour
     private void Update()
     {
         UpdateState();
-        distance = Vector3.Distance(transform.position, player.transform.position);
     }
 
     private void EnemyDies()
@@ -78,6 +77,7 @@ public class EnemyController : MonoBehaviour
 
     void UpdateState()
     {
+        distance = Vector3.Distance(transform.position, player.transform.position);
         switch (enemyStates)
         {
             case EnemyStates.ATTACK:

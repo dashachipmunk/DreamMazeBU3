@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
-public class WorldRotationController : MonoBehaviour
+public class PlayerRotationController : MonoBehaviour
 {
     [SerializeField]
-    private GameObject world;
+    private GameObject playerController;
     [SerializeField]
     private float rotationAngle;
 
@@ -14,8 +14,8 @@ public class WorldRotationController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            Vector3 rotateTheWorld = new Vector3(rotationAngle, 0, 0);
-            world.transform.DORotate(rotateTheWorld, 2);
+            Vector3 rotatePlayer = new Vector3(rotationAngle, 0, 0);
+            playerController.transform.DORotate(rotatePlayer, 2);
         }
     }
 }

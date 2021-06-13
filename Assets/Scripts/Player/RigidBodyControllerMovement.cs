@@ -33,6 +33,8 @@ public class RigidBodyControllerMovement : MonoBehaviour
     [SerializeField]
     private VerticalMovingPlatformController[] platformController;
     [SerializeField]
+    private HorizontalMovingPlatformController horizontalMoving;
+    [SerializeField]
     private Transform startPosition;
     [SerializeField]
     private WorldRotationController[] worldRotation;
@@ -58,11 +60,13 @@ public class RigidBodyControllerMovement : MonoBehaviour
     private void Awake()
     {
         rigidBody = GetComponent<Rigidbody>();
+        isHealthReduced = false;
+        isDead = false;
     }
 
     private void Start()
     {
-        transform.localPosition = startPosition.localPosition;
+        //transform.localPosition = startPosition.localPosition;
         touchedPlatformCounter = -1;
         touchedRotationPlatformCounter = -1;
         healthController = FindObjectOfType<HealthController>();
@@ -155,6 +159,11 @@ public class RigidBodyControllerMovement : MonoBehaviour
             transform.parent = other.transform;
             platformController[touchedPlatformCounter].enabled = true;
         }
+        else if (other.gameObject.CompareTag("PlatformHor"))
+        {
+            transform.parent = other.transform;
+            horizontalMoving.enabled = true;
+        }
         else if (other.gameObject.CompareTag("Rotate"))
         {
             worldRotation[touchedRotationPlatformCounter].enabled = true;
@@ -186,6 +195,10 @@ public class RigidBodyControllerMovement : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.CompareTag("Platform"))
+        {
+            transform.parent = world.transform;
+        }
+        else if (other.gameObject.CompareTag("PlatformHor"))
         {
             transform.parent = world.transform;
         }

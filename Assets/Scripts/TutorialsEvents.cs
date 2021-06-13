@@ -5,6 +5,6 @@ public class TutorialsEvents : MonoBehaviour
 {
     private void Start()
     {
-        Time.timeScale = 0f;
+        UIController.singletonUI.ShowTutorialPanel();
     }
 }

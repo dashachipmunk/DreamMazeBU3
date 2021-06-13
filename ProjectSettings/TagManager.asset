@@ -19,6 +19,9 @@ TagManager:
   - FxTemporaire
   - Life
   - Teleport1
+  - Star
+  - PlatformHor
+  - PlatformRot
   layers:
   - Default
   - TransparentFX

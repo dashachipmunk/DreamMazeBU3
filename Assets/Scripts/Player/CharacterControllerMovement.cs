@@ -30,6 +30,8 @@ public class CharacterControllerMovement : MonoBehaviour
     private Transform shootPosition;
     [SerializeField]
     private Animator animator;
+    [SerializeField]
+    private ScenesController scenesController;
 
     private float timer;
 
@@ -131,7 +133,7 @@ public class CharacterControllerMovement : MonoBehaviour
         capsuleCollider.enabled = true;
         this.enabled = false;
         characterController.enabled = false;
-        SceneManager.LoadScene("BonusLevel");
+        scenesController.ChangeScene("BonusLevel");
     }
 
     private IEnumerator WaitDeathSound()

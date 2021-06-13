@@ -38,6 +38,8 @@ public class RigidBodyControllerMovement : MonoBehaviour
     private WorldRotationController[] worldRotation;
     [SerializeField]
     private Animator animator;
+    [SerializeField]
+    private ScenesController scenesController;
 
     [Header("Health")]
     private HealthController healthController;
@@ -203,7 +205,7 @@ public class RigidBodyControllerMovement : MonoBehaviour
     private IEnumerator WaitTeleportSound()
     {
         yield return new WaitWhile(() => audioSourceTeleport.isPlaying);
-        SceneManager.LoadScene("GameOver");
+        scenesController.ChangeScene("GameOver");
     }
 
     private IEnumerator WaitDeathSound()

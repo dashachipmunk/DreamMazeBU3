@@ -8,27 +8,19 @@ public class HealthController : MonoBehaviour
 
     public int health;
 
-    private void Awake()
-    {
-        health = PlayerPrefs.GetInt("Health");
-    }
-
     private void Start()
     {
+        health = PlayerPrefs.GetInt("Health");
         for (int i = 0; i < health; i++)
         {
             healthParticle[i].SetActive(true);
         }
     }
 
-    private void Update()
-    {
-        PlayerPrefs.SetInt("Health", health);
-    }
-
     public void HealthReduce()
     {
         health--;
+        PlayerPrefs.SetInt("Health", health);
         healthParticle[health].SetActive(false);
     }
 

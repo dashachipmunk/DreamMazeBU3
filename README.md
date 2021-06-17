@@ -1,2 +1,3 @@
 # DreamMazeBU3
+The adventure game with a 2D character in the 3D world. 
 You are dreaming and your soul is trapped in the strange but beautiful dream. You need to find the centre of a maze by opening the doors and fighting the nightmares. But it's not the end...

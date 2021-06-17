@@ -4413,6 +4413,11 @@ PrefabInstance:
       propertyPath: tutorialPanel
       value: 
       objectReference: {fileID: 601543385}
+    - target: {fileID: 7949212558278035206, guid: 88f1ad977c0dda84d8aec9329dd09402,
+        type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1910600834}
     - target: {fileID: 1525682012, guid: 88f1ad977c0dda84d8aec9329dd09402, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -4439,11 +4444,6 @@ PrefabInstance:
       propertyPath: m_Color.g
       value: 0.5411765
       objectReference: {fileID: 0}
-    - target: {fileID: 7949212558278035206, guid: 88f1ad977c0dda84d8aec9329dd09402,
-        type: 3}
-      propertyPath: gameManager
-      value: 
-      objectReference: {fileID: 1910600834}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88f1ad977c0dda84d8aec9329dd09402, type: 3}
 --- !u!114 &270392339 stripped
@@ -85985,33 +85985,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: -8081744493244888903, guid: dfd8f04c773758343aa2c15778e4f003,
-        type: 3}
-      propertyPath: DopplerLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8081744493244888903, guid: dfd8f04c773758343aa2c15778e4f003,
-        type: 3}
-      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8081744493244888903, guid: dfd8f04c773758343aa2c15778e4f003,
-        type: 3}
-      propertyPath: OutputAudioMixerGroup
-      value: 
-      objectReference: {fileID: 43759361147493729, guid: c0079caf84861bd43a9e8194d1747ec0,
-        type: 2}
-    - target: {fileID: 3509249579377990982, guid: dfd8f04c773758343aa2c15778e4f003,
-        type: 3}
-      propertyPath: OutputAudioMixerGroup
-      value: 
-      objectReference: {fileID: 43759361147493729, guid: c0079caf84861bd43a9e8194d1747ec0,
-        type: 2}
-    - target: {fileID: 3509249579812001145, guid: dfd8f04c773758343aa2c15778e4f003,
-        type: 3}
-      propertyPath: keyStartParent
-      value: 
-      objectReference: {fileID: 2073954263}
     - target: {fileID: -6346494212936847155, guid: dfd8f04c773758343aa2c15778e4f003,
         type: 3}
       propertyPath: m_Enabled
@@ -86070,7 +86043,7 @@ PrefabInstance:
     - target: {fileID: 3509249579377990984, guid: dfd8f04c773758343aa2c15778e4f003,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 48.1
+      value: 29.1
       objectReference: {fileID: 0}
     - target: {fileID: 3509249579377990984, guid: dfd8f04c773758343aa2c15778e4f003,
         type: 3}
@@ -86080,7 +86053,7 @@ PrefabInstance:
     - target: {fileID: 3509249579377990984, guid: dfd8f04c773758343aa2c15778e4f003,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 36.7
+      value: 4.7
       objectReference: {fileID: 0}
     - target: {fileID: 3509249579377990984, guid: dfd8f04c773758343aa2c15778e4f003,
         type: 3}
@@ -86147,6 +86120,33 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3509249579377990982, guid: dfd8f04c773758343aa2c15778e4f003,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 43759361147493729, guid: c0079caf84861bd43a9e8194d1747ec0,
+        type: 2}
+    - target: {fileID: -8081744493244888903, guid: dfd8f04c773758343aa2c15778e4f003,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8081744493244888903, guid: dfd8f04c773758343aa2c15778e4f003,
+        type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8081744493244888903, guid: dfd8f04c773758343aa2c15778e4f003,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 43759361147493729, guid: c0079caf84861bd43a9e8194d1747ec0,
+        type: 2}
+    - target: {fileID: 3509249579812001145, guid: dfd8f04c773758343aa2c15778e4f003,
+        type: 3}
+      propertyPath: keyStartParent
+      value: 
+      objectReference: {fileID: 2073954263}
     m_RemovedComponents:
     - {fileID: -6346494212936847155, guid: dfd8f04c773758343aa2c15778e4f003, type: 3}
     - {fileID: -9149736115378065771, guid: dfd8f04c773758343aa2c15778e4f003, type: 3}

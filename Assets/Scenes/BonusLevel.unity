@@ -5782,7 +5782,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zFinalPosition: 10
-  speed: 4
+  speed: 7
 --- !u!64 &268616106
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6607,7 +6607,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh298066
+  m_Name: pb_Mesh32024
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -21169,7 +21169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zFinalPosition: 8
-  speed: 4
+  speed: 8
 --- !u!65 &1241555796
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24071,7 +24071,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zFinalPosition: 9
-  speed: 3
+  speed: 6
 --- !u!65 &1464755631
 BoxCollider:
   m_ObjectHideFlags: 0

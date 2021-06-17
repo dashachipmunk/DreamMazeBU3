@@ -67,7 +67,7 @@ public class RigidBodyControllerMovement : MonoBehaviour
 
     private void Start()
     {
-        transform.localPosition = startTransform.localPosition;
+        //transform.localPosition = startTransform.localPosition;
         startPosition = new Vector3(0, 0, 0);
         touchedPlatformCounter = -1;
         touchedRotationPlatformCounter = -1;

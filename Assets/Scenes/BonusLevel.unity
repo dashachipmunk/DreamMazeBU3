@@ -20179,36 +20179,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 3509249579377990981, guid: dfd8f04c773758343aa2c15778e4f003,
-        type: 3}
-      propertyPath: scenesController
-      value: 
-      objectReference: {fileID: 1084561248}
-    - target: {fileID: 3509249579377990981, guid: dfd8f04c773758343aa2c15778e4f003,
-        type: 3}
-      propertyPath: healthController
-      value: 
-      objectReference: {fileID: 1330754459}
-    - target: {fileID: -9149736115378065771, guid: dfd8f04c773758343aa2c15778e4f003,
-        type: 3}
-      propertyPath: m_Height
-      value: 3.5722055
-      objectReference: {fileID: 0}
-    - target: {fileID: -9149736115378065771, guid: dfd8f04c773758343aa2c15778e4f003,
-        type: 3}
-      propertyPath: m_Center.x
-      value: 0.11474311
-      objectReference: {fileID: 0}
-    - target: {fileID: -9149736115378065771, guid: dfd8f04c773758343aa2c15778e4f003,
-        type: 3}
-      propertyPath: m_Center.y
-      value: -0.3288412
-      objectReference: {fileID: 0}
-    - target: {fileID: -9149736115378065771, guid: dfd8f04c773758343aa2c15778e4f003,
-        type: 3}
-      propertyPath: m_Center.z
-      value: 8.839812e-11
-      objectReference: {fileID: 0}
     - target: {fileID: -6346494212936847155, guid: dfd8f04c773758343aa2c15778e4f003,
         type: 3}
       propertyPath: platformController.Array.size
@@ -20304,6 +20274,36 @@ PrefabInstance:
       propertyPath: startTransform
       value: 
       objectReference: {fileID: 789774389}
+    - target: {fileID: -9149736115378065771, guid: dfd8f04c773758343aa2c15778e4f003,
+        type: 3}
+      propertyPath: m_Height
+      value: 3.5722055
+      objectReference: {fileID: 0}
+    - target: {fileID: -9149736115378065771, guid: dfd8f04c773758343aa2c15778e4f003,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0.11474311
+      objectReference: {fileID: 0}
+    - target: {fileID: -9149736115378065771, guid: dfd8f04c773758343aa2c15778e4f003,
+        type: 3}
+      propertyPath: m_Center.y
+      value: -0.3288412
+      objectReference: {fileID: 0}
+    - target: {fileID: -9149736115378065771, guid: dfd8f04c773758343aa2c15778e4f003,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 8.839812e-11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3509249579377990981, guid: dfd8f04c773758343aa2c15778e4f003,
+        type: 3}
+      propertyPath: scenesController
+      value: 
+      objectReference: {fileID: 1084561248}
+    - target: {fileID: 3509249579377990981, guid: dfd8f04c773758343aa2c15778e4f003,
+        type: 3}
+      propertyPath: healthController
+      value: 
+      objectReference: {fileID: 1330754459}
     - target: {fileID: 3509249579377990984, guid: dfd8f04c773758343aa2c15778e4f003,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22409,6 +22409,11 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7949212558278035206, guid: 88f1ad977c0dda84d8aec9329dd09402,
+        type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1765113786}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88f1ad977c0dda84d8aec9329dd09402, type: 3}
 --- !u!114 &1330754456 stripped
